@@ -73,12 +73,12 @@ img {
 
 @media (max-width: 768px) {
   #foreCastDiv {
-    width: auto; /*  You can change width if you want the card to be larger or smaller  */
+    width: 100%; /*  You can change width if you want the card to be larger or smaller  */
     padding: 15px;
     margin: 0;
   }
   #currentDiv {
-    width: auto; /*  You can change width if you want the card to be larger or smaller  */
+    width: 100%; /*  You can change width if you want the card to be larger or smaller  */
     padding: 15px;
     margin: 0;
   }
