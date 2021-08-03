@@ -12,7 +12,7 @@ body {
 }
 
 .card {
-  width: 100%;
+  /* width: 100%; */
   margin: 2rem;
 }
 
@@ -23,12 +23,12 @@ body {
 
 #foreCastDiv {
   margin: 0 auto;
-  width: 45rem; /*  You can change width if you want the card to be larger or smaller  */
+  /* width: 45rem;  */
 }
 
 #currentDiv {
   margin: 0 auto;
-  width: 45rem;
+  /* width: 45rem; */
 }
 
 img {
