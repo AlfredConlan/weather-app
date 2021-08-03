@@ -144,6 +144,9 @@ function displayCurrent(currentData) {
   tempFahr = convertCelsiusToFahr(parsedCurrent.properties.dewpoint.value);
   dewPointTag.innerText = "Dew Point: " + tempFahr;
 
+  // Style currentDiv
+  currentDiv.className = "container";
+
   // Append info
   currentDiv.appendChild(cardBody);
   cardBody.append(imgTag);
@@ -166,11 +169,11 @@ function displayForeCast(foreCastData, locationData) {
   const parsedLocationData = JSON.parse(locationData);
   const locationDiv = document.getElementById("locationDiv");
   const locationTag = document.createElement("h2");
-  const gridDiv = document.getElementById("foreCastDiv");
+  const forCastDiv = document.getElementById("foreCastDiv");
 
   // Reset all fields - Find better way?
   locationDiv.innerHTML = "";
-  gridDiv.innerHTML = "";
+  forCastDiv.innerHTML = "";
 
   // Create location
   locationTag.id = "location";
@@ -224,7 +227,7 @@ function displayForeCast(foreCastData, locationData) {
     detailedForecastTag.innerText = parsedForecast.properties.periods[i].detailedForecast;
 
     // Append info
-    gridDiv.appendChild(cardBody);
+    forCastDiv.appendChild(cardBody);
     cardBody.append(imgTag);
     cardBody.append(nameTag);
     cardBody.append(temperatureTag);

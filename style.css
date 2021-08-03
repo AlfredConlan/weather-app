@@ -76,9 +76,13 @@ img {
     width: 100vw; /*  You can change width if you want the card to be larger or smaller  */
     padding: 15px;
     margin: 0;
+    border-radius: 20px;
+    border-color: red;
+    border-style: solid;
   }
+
   #currentDiv {
-    width: 100vw; /*  You can change width if you want the card to be larger or smaller  */
+    width: 100vw !important; /*  You can change width if you want the card to be larger or smaller  */
     padding: 15px;
     margin: 0;
   }
