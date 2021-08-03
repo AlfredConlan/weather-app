@@ -23,11 +23,16 @@ body {
 
 #foreCastDiv {
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
   /* width: 45rem;  */
 }
 
 #currentDiv {
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
   /* width: 45rem; */
 }
 
