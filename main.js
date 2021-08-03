@@ -73,7 +73,7 @@ function displayCurrent(currentData) {
 
   let tempFahr = 0;
 
-  // console.log(parsedCurrent);
+  console.log(parsedCurrent);
 
   // Reset all fields - Find better way?
   currentDiv.innerHTML = "";
@@ -137,7 +137,7 @@ function displayCurrent(currentData) {
 
   // Show humidity
   humidityTag.id = "humidity";
-  humidityTag.innerText = "Humidity: " + parsedCurrent.properties.windDirection.value + "%";
+  humidityTag.innerText = "Humidity: " + Math.round(parsedCurrent.properties.relativeHumidity.value) + "%";
 
   // Show dew point
   dewPointTag.id = "dew";
