@@ -1,0 +1,85 @@
+body {
+  background-image: url("./images/beach-background.jpg");
+}
+
+.header {
+  text-align: center;
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.card {
+  width: 100%;
+  margin: 2rem;
+}
+
+.image-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+#foreCastDiv {
+  margin: 0 auto;
+  width: 45rem; /*  You can change width if you want the card to be larger or smaller  */
+}
+
+#currentDiv {
+  margin: 0 auto;
+  width: 45rem;
+}
+
+img {
+  width: 80px;
+  padding-bottom: 20px;
+}
+
+#location {
+  text-align: center;
+  padding: 50px;
+}
+
+.period-name {
+  width: 100%;
+  text-align: left;
+}
+
+.detail-description {
+  text-align: justify;
+}
+
+.card-div {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: white;
+  background-color: #4d5382;
+  color: white;
+}
+
+/*--------------   media queries below for different screen sizes below   ---------*/
+
+@media (max-width: 1024px) {
+  #foreCastDiv {
+    width: 35rem; /*  You can change width if you want the card to be larger or smaller  */
+  }
+  #currentDiv {
+    width: 35rem; /*  You can change width if you want the card to be larger or smaller  */
+  }
+}
+
+@media (max-width: 768px) {
+  #foreCastDiv {
+    width: auto; /*  You can change width if you want the card to be larger or smaller  */
+    padding: 15px;
+    margin: 0;
+  }
+  #currentDiv {
+    width: auto; /*  You can change width if you want the card to be larger or smaller  */
+    padding: 15px;
+    margin: 0;
+  }
+}
