@@ -226,6 +226,9 @@ function displayForeCast(foreCastData, locationData) {
     detailedForecastTag.className = "detail-description";
     detailedForecastTag.innerText = parsedForecast.properties.periods[i].detailedForecast;
 
+    // Style forCastDiv
+    forCastDiv.className = "container";
+
     // Append info
     forCastDiv.appendChild(cardBody);
     cardBody.append(imgTag);
